@@ -10,7 +10,7 @@ import android.view.WindowManager;
 
 public class LoginActivity extends Activity {
 
-	private final int LOGIN_TIME = 2000;
+	private final int LOGIN_TIME = 3000;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class LoginActivity extends Activity {
 
 		setContentView(R.layout.activity_login);
 
-		// 延迟2s打开主界面
+		// 延迟3s打开主界面
 		new Handler().postDelayed(new Runnable() {
 
 			@Override
@@ -33,6 +33,7 @@ public class LoginActivity extends Activity {
 				Intent intent = new Intent();
 				intent.setClass(getApplicationContext(), MainActivity.class);
 				startActivity(intent);
+				finish();
 
 			}
 		}, LOGIN_TIME);

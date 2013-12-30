@@ -6,11 +6,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/login_background"
     tools:context=".LoginActivity" >
-
-    <TextView
+    
+    <ProgressBar 
+        android:id="@+id/pBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        style="@android:style/Widget.ProgressBar"
+        android:layout_centerInParent="true"
+        />
+    <TextView 
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pBar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Login_Text"
+        android:textSize="20sp"
+        />
 
 </RelativeLayout>
