@@ -6,5 +6,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="Login_Text">正在加载中...</string>
+    <string name="Btn_Start">开始游戏</string>
+    <string name="Btn_Option">游戏选项</string>
+    <string name="Btn_Help">游戏帮助</string>
+    <string name="Btn_Exit">退出游戏</string>
 
 </resources>

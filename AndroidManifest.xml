@@ -24,6 +24,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="landscape"
             android:name="com.example.sokoban.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
