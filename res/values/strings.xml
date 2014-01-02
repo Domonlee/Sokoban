@@ -10,5 +10,6 @@
     <string name="Btn_Option">游戏选项</string>
     <string name="Btn_Help">游戏帮助</string>
     <string name="Btn_Exit">退出游戏</string>
+    <string name="title_activity_game">GameActivity</string>
 
 </resources>

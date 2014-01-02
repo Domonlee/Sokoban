@@ -1,0 +1,690 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC125" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ImageView0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageVie3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ImageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageVie14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ImageView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageVie25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ImageView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageVie36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ImageView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageVie47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ImageView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageVie58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ImageView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageVie69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ImageView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView78"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageVie80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+
+            <ImageView
+                android:id="@+id/ImageView87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/db" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 计时,记步 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间 :"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView 
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1s"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="步数 :"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="60dp"
+        />
+    <TextView 
+        android:id="@+id/step_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1步"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="60dp"
+        />
+    <Button 
+        android:id="@+id/restartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重新游戏"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="90dp"
+        ></Button>
+    
+    
+    <!-- 透明方向键 -->
+    <Button
+        android:id="@+id/btn_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="#00000000"
+        android:text="↑"
+        android:textSize="50dp" />
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btn_up"
+        android:layout_marginTop="60dp"
+        android:layout_alignRight="@id/btn_up"
+        android:background="#00000000"
+        android:text="↓"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignBottom="@id/btn_down"
+		android:layout_toRightOf="@id/btn_down"
+        android:background="#00000000"
+        android:text="→"
+        android:textSize="50dp" />
+	<Button
+        android:id="@+id/btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_down"
+        android:layout_toLeftOf="@id/btn_down"
+        android:background="#00000000"
+        android:text="←"
+        android:textSize="50dp" />
+    
+</RelativeLayout>

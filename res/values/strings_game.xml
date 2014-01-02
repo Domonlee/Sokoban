@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="my_array">
+		<item>0304050607081112131820212526282930394048495051525354555865666778</item>
+		<item>2433354446</item>
+		<item>2231324142</item>
+		<item>38</item>
+		</string-array>
+</resources>

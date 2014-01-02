@@ -14,9 +14,9 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:screenOrientation="landscape"
             android:name="com.example.sokoban.LoginActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,9 +24,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:screenOrientation="landscape"
             android:name="com.example.sokoban.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name="com.example.sokoban.GameActivity"
+            android:label="@string/title_activity_game" >
         </activity>
     </application>
 
