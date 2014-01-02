@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -29,9 +30,14 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:screenOrientation="landscape"
             android:name="com.example.sokoban.GameActivity"
-            android:label="@string/title_activity_game" >
+            android:label="@string/title_activity_game"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.sokoban.OptionActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/title_activity_option" >
         </activity>
     </application>
 

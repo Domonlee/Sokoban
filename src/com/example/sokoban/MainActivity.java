@@ -1,10 +1,14 @@
 package com.example.sokoban;
 
+import com.example.sokoban.R;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,6 +29,15 @@ public class MainActivity extends Activity {
 	private static int SECOND = Menu.FIRST + 1;
 	private static int THREE = Menu.FIRST + 2;
 	private static int FOUR = Menu.FIRST + 3;
+
+	private static boolean isExit = false;
+	private static Handler handler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+			isExit = false;
+		}
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -73,16 +86,27 @@ public class MainActivity extends Activity {
 								}).create().show();
 			}
 		});
-		
-		//开始游戏按钮
+
+		// 开始游戏按钮
 		startButton.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent();
 				intent.setClass(getApplicationContext(), GameActivity.class);
 				startActivity(intent);
-				
+
+			}
+		});
+
+		// 设置按钮
+		optionButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), OptionActivity.class);
+				startActivity(intent);
 			}
 		});
 	}
@@ -115,8 +139,21 @@ public class MainActivity extends Activity {
 					Toast.LENGTH_SHORT).show();
 			break;
 		case Menu.FIRST + 2:
-			Toast.makeText(getApplicationContext(), "打开关于界面",
-					Toast.LENGTH_SHORT).show();
+			new AlertDialog.Builder(MainActivity.this)
+					.setTitle("关于我们")
+					.setMessage(
+							"推箱子小游戏" + "\n" + "制作者: 李钊&邱俊森" + "\n"
+									+ "项目地址https://github.com/Domonlee/Sokoban"
+									+ "\n" + "联系方式:viplizhao@gmail.com " + "\n"
+									+ "qiujunsen@163.com")
+					.setPositiveButton("返回",
+							new DialogInterface.OnClickListener() {
+								@Override
+								public void onClick(DialogInterface dialog,
+										int which) {
+									dialog.dismiss();
+								}
+							}).create().show();
 			break;
 		case Menu.FIRST + 3: {
 			new AlertDialog.Builder(MainActivity.this)
@@ -146,4 +183,22 @@ public class MainActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+	/*
+	 * 连续两次退出键 退出程序
+	 */
+	@Override
+	public void onBackPressed() {
+		if (!isExit) {
+			isExit = true;
+			Toast.makeText(getApplicationContext(), "再按一次退出程序",
+					Toast.LENGTH_LONG).show();
+			// 2s判定
+			handler.sendEmptyMessageDelayed(0, 2000);
+		} else {
+			finish();
+			System.exit(0);
+		}
+	}
+
 }

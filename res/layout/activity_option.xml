@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".OptionActivity" >
+
+    <RelativeLayout
+        android:id="@+id/Btns_Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/op_sound_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="静音"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Switch
+            android:id="@+id/op_sound_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="120dp"
+            tools:ignore="NewApi" />
+
+        <TextView
+            android:id="@+id/op_vib_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/op_sound_text"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:text="震动"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Switch
+            android:id="@+id/op_vib_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/op_sound_btn"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="23dp"
+            tools:ignore="NewApi" />
+    </RelativeLayout>
+
+</RelativeLayout>

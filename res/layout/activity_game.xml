@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC125" >
+    android:background="#CCCCCC" >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -593,7 +593,7 @@
     <TextView 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="时间 :"
+        android:text="@string/game_time"
         android:textSize="20sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -604,7 +604,6 @@
         android:id="@+id/time_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1s"
         android:textSize="20sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -614,7 +613,7 @@
     <TextView 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="步数 :"
+        android:text="@string/game_step"
         android:textSize="20sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -625,7 +624,6 @@
         android:id="@+id/step_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1步"
         android:textSize="20sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -636,7 +634,7 @@
         android:id="@+id/restartBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="重新游戏"
+        android:text="@string/game_restart"
         android:textSize="20sp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"

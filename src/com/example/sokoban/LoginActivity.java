@@ -1,5 +1,7 @@
 package com.example.sokoban;
 
+import com.example.sokoban.R;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
@@ -10,7 +12,7 @@ import android.view.WindowManager;
 
 public class LoginActivity extends Activity {
 
-	private final int LOGIN_TIME = 3000;
+	private final int LOGIN_TIME = 1200;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -135,11 +135,15 @@ public final class R {
         public static final int ImageView86=0x7f090056;
         public static final int ImageView87=0x7f090057;
         public static final int ImageView9=0x7f090009;
-        public static final int action_settings=0x7f090067;
+        public static final int action_settings=0x7f09006b;
         public static final int btn_down=0x7f09005c;
         public static final int btn_left=0x7f09005e;
         public static final int btn_right=0x7f09005d;
         public static final int btn_up=0x7f09005b;
+        public static final int op_sound_btn=0x7f090068;
+        public static final int op_sound_text=0x7f090067;
+        public static final int op_vib_btn=0x7f09006a;
+        public static final int op_vib_text=0x7f090069;
         public static final int pBar=0x7f09005f;
         public static final int restartBtn=0x7f09005a;
         public static final int step_text=0x7f090059;
@@ -150,11 +154,13 @@ public final class R {
         public static final int activity_game=0x7f030000;
         public static final int activity_login=0x7f030001;
         public static final int activity_main=0x7f030002;
+        public static final int activity_option=0x7f030003;
     }
     public static final class menu {
         public static final int game=0x7f080000;
         public static final int login=0x7f080001;
         public static final int main=0x7f080002;
+        public static final int option=0x7f080003;
     }
     public static final class string {
         public static final int Btn_Exit=0x7f050008;
@@ -164,9 +170,13 @@ public final class R {
         public static final int Login_Text=0x7f050004;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int game_restart=0x7f05000d;
+        public static final int game_step=0x7f05000c;
+        public static final int game_time=0x7f05000b;
         public static final int hello_world=0x7f050002;
         public static final int title_activity_game=0x7f050009;
         public static final int title_activity_main=0x7f050003;
+        public static final int title_activity_option=0x7f05000a;
     }
     public static final class style {
         /** 
