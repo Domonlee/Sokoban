@@ -1,6 +1,7 @@
 package com.example.sokoban;
 
 import com.example.sokoban.R;
+import com.example.sokoban.Util.AudioUtil;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -49,6 +50,9 @@ public class MainActivity extends Activity {
 		window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_main);
+		
+		AudioUtil.init(getApplicationContext());
+		AudioUtil.PlayMusic();
 
 		startButton = (Button) findViewById(R.id.Btn_Start);
 		optionButton = (Button) findViewById(R.id.Btn_Option);
@@ -109,10 +113,10 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-		
-		//帮助按钮
+
+		// 帮助按钮
 		helpButton.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent();
@@ -141,14 +145,22 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-		case Menu.FIRST:
+		case Menu.FIRST: {
 			Toast.makeText(getApplicationContext(), "打开设置界面",
 					Toast.LENGTH_SHORT).show();
+			Intent intent = new Intent();
+			intent.setClass(getApplicationContext(), OptionActivity.class);
+			startActivity(intent);
 			break;
-		case Menu.FIRST + 1:
+		}
+		case Menu.FIRST + 1: {
 			Toast.makeText(getApplicationContext(), "打开帮助界面",
 					Toast.LENGTH_SHORT).show();
+			Intent intent = new Intent();
+			intent.setClass(getApplicationContext(), HelpActivity.class);
+			startActivity(intent);
 			break;
+		}
 		case Menu.FIRST + 2:
 			new AlertDialog.Builder(MainActivity.this)
 					.setTitle("关于我们")

@@ -1,5 +1,7 @@
 package com.example.sokoban;
 
+import com.example.sokoban.Util.AudioUtil;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -21,17 +23,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class GameActivity extends Activity {
-	int counter = 0;
-	int[][] matrix = new int[8][11];
-	int people_x, people_y;
-	int level, money;
-	int step = 0;
-	final ImageView[][] imageViews = new ImageView[8][11];
-	SharedPreferences mPreferences;
+	private int counter = 0;
+	private int[][] matrix = new int[8][11];
+	private int people_x, people_y;
+	private int level, money;
+	private int step = 0;
+	private final ImageView[][] imageViews = new ImageView[8][11];
+	private SharedPreferences mPreferences;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 		level = mPreferences.getInt("level", 0);
 		money = mPreferences.getInt("money", 100);
@@ -57,6 +58,8 @@ public class GameActivity extends Activity {
 		final Button btn_right = (Button) findViewById(R.id.btn_right);
 		final Button btn_left = (Button) findViewById(R.id.btn_left);
 		final Button btn_restrat = (Button) findViewById(R.id.restartBtn);
+
+		final AudioUtil audioUtil = new AudioUtil();
 
 		btn_restrat.setOnClickListener(new View.OnClickListener() {
 
@@ -134,7 +137,7 @@ public class GameActivity extends Activity {
 						nextLevel(myString);
 					btn_step.setText(++step + "²½");
 				}
-
+				audioUtil.PlaySoundPool(R.raw.btns);
 			}
 		});
 		btn_down.setOnClickListener(new View.OnClickListener() {

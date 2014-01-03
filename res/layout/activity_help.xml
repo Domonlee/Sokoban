@@ -2,13 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/db" >
-
-    <ImageView
-        android:id="@+id/help_bg"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/help_bg" />
+    android:background="@drawable/help_bg" >
 
     <ImageView
         android:id="@+id/step_1"

@@ -9,7 +9,7 @@ package com.example.sokoban;
 
 public final class R {
     public static final class array {
-        public static final int my_array=0x7f060000;
+        public static final int my_array=0x7f070000;
     }
     public static final class attr {
     }
@@ -20,8 +20,8 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
         public static final int btn_exit=0x7f020000;
@@ -41,128 +41,126 @@ public final class R {
         public static final int q=0x7f02000e;
         public static final int r=0x7f02000f;
         public static final int sokoban=0x7f020010;
-        public static final int sokoban1=0x7f020011;
-        public static final int step_1=0x7f020012;
-        public static final int step_2=0x7f020013;
-        public static final int step_3=0x7f020014;
-        public static final int step_4=0x7f020015;
-        public static final int xz=0x7f020016;
+        public static final int step_1=0x7f020011;
+        public static final int step_2=0x7f020012;
+        public static final int step_3=0x7f020013;
+        public static final int step_4=0x7f020014;
+        public static final int xz=0x7f020015;
     }
     public static final class id {
-        public static final int Btn_Exit=0x7f09006c;
-        public static final int Btn_Help=0x7f09006b;
-        public static final int Btn_Option=0x7f09006a;
-        public static final int Btn_Start=0x7f090069;
-        public static final int Btns_Layout=0x7f090068;
-        public static final int ImageVie14=0x7f09000e;
-        public static final int ImageVie25=0x7f090019;
-        public static final int ImageVie3=0x7f090003;
-        public static final int ImageVie36=0x7f090024;
-        public static final int ImageVie47=0x7f09002f;
-        public static final int ImageVie58=0x7f09003a;
-        public static final int ImageVie69=0x7f090045;
-        public static final int ImageVie80=0x7f090050;
-        public static final int ImageView=0x7f090067;
-        public static final int ImageView0=0x7f090000;
-        public static final int ImageView1=0x7f090001;
-        public static final int ImageView10=0x7f09000a;
-        public static final int ImageView11=0x7f09000b;
-        public static final int ImageView12=0x7f09000c;
-        public static final int ImageView13=0x7f09000d;
-        public static final int ImageView15=0x7f09000f;
-        public static final int ImageView16=0x7f090010;
-        public static final int ImageView17=0x7f090011;
-        public static final int ImageView18=0x7f090012;
-        public static final int ImageView19=0x7f090013;
-        public static final int ImageView2=0x7f090002;
-        public static final int ImageView20=0x7f090014;
-        public static final int ImageView21=0x7f090015;
-        public static final int ImageView22=0x7f090016;
-        public static final int ImageView23=0x7f090017;
-        public static final int ImageView24=0x7f090018;
-        public static final int ImageView26=0x7f09001a;
-        public static final int ImageView27=0x7f09001b;
-        public static final int ImageView28=0x7f09001c;
-        public static final int ImageView29=0x7f09001d;
-        public static final int ImageView30=0x7f09001e;
-        public static final int ImageView31=0x7f09001f;
-        public static final int ImageView32=0x7f090020;
-        public static final int ImageView33=0x7f090021;
-        public static final int ImageView34=0x7f090022;
-        public static final int ImageView35=0x7f090023;
-        public static final int ImageView37=0x7f090025;
-        public static final int ImageView38=0x7f090026;
-        public static final int ImageView39=0x7f090027;
-        public static final int ImageView4=0x7f090004;
-        public static final int ImageView40=0x7f090028;
-        public static final int ImageView41=0x7f090029;
-        public static final int ImageView42=0x7f09002a;
-        public static final int ImageView43=0x7f09002b;
-        public static final int ImageView44=0x7f09002c;
-        public static final int ImageView45=0x7f09002d;
-        public static final int ImageView46=0x7f09002e;
-        public static final int ImageView48=0x7f090030;
-        public static final int ImageView49=0x7f090031;
-        public static final int ImageView5=0x7f090005;
-        public static final int ImageView50=0x7f090032;
-        public static final int ImageView51=0x7f090033;
-        public static final int ImageView52=0x7f090034;
-        public static final int ImageView53=0x7f090035;
-        public static final int ImageView54=0x7f090036;
-        public static final int ImageView55=0x7f090037;
-        public static final int ImageView56=0x7f090038;
-        public static final int ImageView57=0x7f090039;
-        public static final int ImageView59=0x7f09003b;
-        public static final int ImageView6=0x7f090006;
-        public static final int ImageView60=0x7f09003c;
-        public static final int ImageView61=0x7f09003d;
-        public static final int ImageView62=0x7f09003e;
-        public static final int ImageView63=0x7f09003f;
-        public static final int ImageView64=0x7f090040;
-        public static final int ImageView65=0x7f090041;
-        public static final int ImageView66=0x7f090042;
-        public static final int ImageView67=0x7f090043;
-        public static final int ImageView68=0x7f090044;
-        public static final int ImageView7=0x7f090007;
-        public static final int ImageView70=0x7f090046;
-        public static final int ImageView71=0x7f090047;
-        public static final int ImageView72=0x7f090048;
-        public static final int ImageView73=0x7f090049;
-        public static final int ImageView74=0x7f09004a;
-        public static final int ImageView75=0x7f09004b;
-        public static final int ImageView76=0x7f09004c;
-        public static final int ImageView77=0x7f09004d;
-        public static final int ImageView78=0x7f09004e;
-        public static final int ImageView79=0x7f09004f;
-        public static final int ImageView8=0x7f090008;
-        public static final int ImageView81=0x7f090051;
-        public static final int ImageView82=0x7f090052;
-        public static final int ImageView83=0x7f090053;
-        public static final int ImageView84=0x7f090054;
-        public static final int ImageView85=0x7f090055;
-        public static final int ImageView86=0x7f090056;
-        public static final int ImageView87=0x7f090057;
-        public static final int ImageView9=0x7f090009;
-        public static final int action_settings=0x7f090071;
-        public static final int btn_down=0x7f09005c;
-        public static final int btn_left=0x7f09005e;
-        public static final int btn_next=0x7f090064;
-        public static final int btn_right=0x7f09005d;
-        public static final int btn_up=0x7f09005b;
-        public static final int help_bg=0x7f09005f;
-        public static final int op_sound_btn=0x7f09006e;
-        public static final int op_sound_text=0x7f09006d;
-        public static final int op_vib_btn=0x7f090070;
-        public static final int op_vib_text=0x7f09006f;
-        public static final int pBar=0x7f090065;
-        public static final int restartBtn=0x7f09005a;
-        public static final int step_1=0x7f090060;
-        public static final int step_2=0x7f090061;
-        public static final int step_3=0x7f090062;
-        public static final int step_4=0x7f090063;
-        public static final int step_text=0x7f090059;
-        public static final int textview=0x7f090066;
-        public static final int time_text=0x7f090058;
+        public static final int Btn_Exit=0x7f0a006b;
+        public static final int Btn_Help=0x7f0a006a;
+        public static final int Btn_Option=0x7f0a0069;
+        public static final int Btn_Start=0x7f0a0068;
+        public static final int Btns_Layout=0x7f0a0067;
+        public static final int ImageVie14=0x7f0a000e;
+        public static final int ImageVie25=0x7f0a0019;
+        public static final int ImageVie3=0x7f0a0003;
+        public static final int ImageVie36=0x7f0a0024;
+        public static final int ImageVie47=0x7f0a002f;
+        public static final int ImageVie58=0x7f0a003a;
+        public static final int ImageVie69=0x7f0a0045;
+        public static final int ImageVie80=0x7f0a0050;
+        public static final int ImageView=0x7f0a0066;
+        public static final int ImageView0=0x7f0a0000;
+        public static final int ImageView1=0x7f0a0001;
+        public static final int ImageView10=0x7f0a000a;
+        public static final int ImageView11=0x7f0a000b;
+        public static final int ImageView12=0x7f0a000c;
+        public static final int ImageView13=0x7f0a000d;
+        public static final int ImageView15=0x7f0a000f;
+        public static final int ImageView16=0x7f0a0010;
+        public static final int ImageView17=0x7f0a0011;
+        public static final int ImageView18=0x7f0a0012;
+        public static final int ImageView19=0x7f0a0013;
+        public static final int ImageView2=0x7f0a0002;
+        public static final int ImageView20=0x7f0a0014;
+        public static final int ImageView21=0x7f0a0015;
+        public static final int ImageView22=0x7f0a0016;
+        public static final int ImageView23=0x7f0a0017;
+        public static final int ImageView24=0x7f0a0018;
+        public static final int ImageView26=0x7f0a001a;
+        public static final int ImageView27=0x7f0a001b;
+        public static final int ImageView28=0x7f0a001c;
+        public static final int ImageView29=0x7f0a001d;
+        public static final int ImageView30=0x7f0a001e;
+        public static final int ImageView31=0x7f0a001f;
+        public static final int ImageView32=0x7f0a0020;
+        public static final int ImageView33=0x7f0a0021;
+        public static final int ImageView34=0x7f0a0022;
+        public static final int ImageView35=0x7f0a0023;
+        public static final int ImageView37=0x7f0a0025;
+        public static final int ImageView38=0x7f0a0026;
+        public static final int ImageView39=0x7f0a0027;
+        public static final int ImageView4=0x7f0a0004;
+        public static final int ImageView40=0x7f0a0028;
+        public static final int ImageView41=0x7f0a0029;
+        public static final int ImageView42=0x7f0a002a;
+        public static final int ImageView43=0x7f0a002b;
+        public static final int ImageView44=0x7f0a002c;
+        public static final int ImageView45=0x7f0a002d;
+        public static final int ImageView46=0x7f0a002e;
+        public static final int ImageView48=0x7f0a0030;
+        public static final int ImageView49=0x7f0a0031;
+        public static final int ImageView5=0x7f0a0005;
+        public static final int ImageView50=0x7f0a0032;
+        public static final int ImageView51=0x7f0a0033;
+        public static final int ImageView52=0x7f0a0034;
+        public static final int ImageView53=0x7f0a0035;
+        public static final int ImageView54=0x7f0a0036;
+        public static final int ImageView55=0x7f0a0037;
+        public static final int ImageView56=0x7f0a0038;
+        public static final int ImageView57=0x7f0a0039;
+        public static final int ImageView59=0x7f0a003b;
+        public static final int ImageView6=0x7f0a0006;
+        public static final int ImageView60=0x7f0a003c;
+        public static final int ImageView61=0x7f0a003d;
+        public static final int ImageView62=0x7f0a003e;
+        public static final int ImageView63=0x7f0a003f;
+        public static final int ImageView64=0x7f0a0040;
+        public static final int ImageView65=0x7f0a0041;
+        public static final int ImageView66=0x7f0a0042;
+        public static final int ImageView67=0x7f0a0043;
+        public static final int ImageView68=0x7f0a0044;
+        public static final int ImageView7=0x7f0a0007;
+        public static final int ImageView70=0x7f0a0046;
+        public static final int ImageView71=0x7f0a0047;
+        public static final int ImageView72=0x7f0a0048;
+        public static final int ImageView73=0x7f0a0049;
+        public static final int ImageView74=0x7f0a004a;
+        public static final int ImageView75=0x7f0a004b;
+        public static final int ImageView76=0x7f0a004c;
+        public static final int ImageView77=0x7f0a004d;
+        public static final int ImageView78=0x7f0a004e;
+        public static final int ImageView79=0x7f0a004f;
+        public static final int ImageView8=0x7f0a0008;
+        public static final int ImageView81=0x7f0a0051;
+        public static final int ImageView82=0x7f0a0052;
+        public static final int ImageView83=0x7f0a0053;
+        public static final int ImageView84=0x7f0a0054;
+        public static final int ImageView85=0x7f0a0055;
+        public static final int ImageView86=0x7f0a0056;
+        public static final int ImageView87=0x7f0a0057;
+        public static final int ImageView9=0x7f0a0009;
+        public static final int action_settings=0x7f0a0070;
+        public static final int btn_down=0x7f0a005c;
+        public static final int btn_left=0x7f0a005e;
+        public static final int btn_next=0x7f0a0063;
+        public static final int btn_right=0x7f0a005d;
+        public static final int btn_up=0x7f0a005b;
+        public static final int op_sound_btn=0x7f0a006d;
+        public static final int op_sound_text=0x7f0a006c;
+        public static final int op_vib_btn=0x7f0a006f;
+        public static final int op_vib_text=0x7f0a006e;
+        public static final int pBar=0x7f0a0064;
+        public static final int restartBtn=0x7f0a005a;
+        public static final int step_1=0x7f0a005f;
+        public static final int step_2=0x7f0a0060;
+        public static final int step_3=0x7f0a0061;
+        public static final int step_4=0x7f0a0062;
+        public static final int step_text=0x7f0a0059;
+        public static final int textview=0x7f0a0065;
+        public static final int time_text=0x7f0a0058;
     }
     public static final class layout {
         public static final int activity_game=0x7f030000;
@@ -172,26 +170,30 @@ public final class R {
         public static final int activity_option=0x7f030004;
     }
     public static final class menu {
-        public static final int game=0x7f080000;
-        public static final int login=0x7f080001;
-        public static final int main=0x7f080002;
-        public static final int option=0x7f080003;
+        public static final int game=0x7f090000;
+        public static final int login=0x7f090001;
+        public static final int main=0x7f090002;
+        public static final int option=0x7f090003;
+    }
+    public static final class raw {
+        public static final int backgroung=0x7f040000;
+        public static final int btns=0x7f040001;
     }
     public static final class string {
-        public static final int Btn_Exit=0x7f050008;
-        public static final int Btn_Help=0x7f050007;
-        public static final int Btn_Option=0x7f050006;
-        public static final int Btn_Start=0x7f050005;
-        public static final int Login_Text=0x7f050004;
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int game_restart=0x7f05000d;
-        public static final int game_step=0x7f05000c;
-        public static final int game_time=0x7f05000b;
-        public static final int hello_world=0x7f050002;
-        public static final int title_activity_game=0x7f050009;
-        public static final int title_activity_main=0x7f050003;
-        public static final int title_activity_option=0x7f05000a;
+        public static final int Btn_Exit=0x7f060008;
+        public static final int Btn_Help=0x7f060007;
+        public static final int Btn_Option=0x7f060006;
+        public static final int Btn_Start=0x7f060005;
+        public static final int Login_Text=0x7f060004;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
+        public static final int game_restart=0x7f06000d;
+        public static final int game_step=0x7f06000c;
+        public static final int game_time=0x7f06000b;
+        public static final int hello_world=0x7f060002;
+        public static final int title_activity_game=0x7f060009;
+        public static final int title_activity_main=0x7f060003;
+        public static final int title_activity_option=0x7f06000a;
     }
     public static final class style {
         /** 
@@ -215,10 +217,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
 }

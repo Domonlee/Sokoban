@@ -8,14 +8,12 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class HelpActivity extends Activity {
-	int step = 0;
+	private int step = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -35,7 +33,6 @@ public class HelpActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				if (step == 0) {
 					setp_1.setVisibility(View.INVISIBLE);
 					setp_2.setVisibility(View.VISIBLE);
@@ -50,7 +47,7 @@ public class HelpActivity extends Activity {
 				}
 				if (step == 3) {
 					Intent intent = new Intent();
-					intent.setClass(getApplicationContext(), GameActivity.class);
+					intent.setClass(HelpActivity.this, GameActivity.class);
 					startActivity(intent);
 					finish();
 				}
