@@ -109,6 +109,17 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 		});
+		
+		//°ïÖú°´Å¥
+		helpButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setClass(MainActivity.this, HelpActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 
 	/*

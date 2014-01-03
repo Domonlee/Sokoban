@@ -14,7 +14,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:indeterminateBehavior="repeat"
         android:indeterminateDrawable="@drawable/image_progress"
         android:indeterminateOnly="true" />
 

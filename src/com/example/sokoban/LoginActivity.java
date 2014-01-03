@@ -12,7 +12,7 @@ import android.view.WindowManager;
 
 public class LoginActivity extends Activity {
 
-	private final int LOGIN_TIME = 1200;
+	private final int LOGIN_TIME = 1500;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,6 @@ public class LoginActivity extends Activity {
 				intent.setClass(getApplicationContext(), MainActivity.class);
 				startActivity(intent);
 				finish();
-
 			}
 		}, LOGIN_TIME);
 	}

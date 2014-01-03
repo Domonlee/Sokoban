@@ -57,8 +57,7 @@ public class GameActivity extends Activity {
 		final Button btn_right = (Button) findViewById(R.id.btn_right);
 		final Button btn_left = (Button) findViewById(R.id.btn_left);
 		final Button btn_restrat = (Button) findViewById(R.id.restartBtn);
-		
-		
+
 		btn_restrat.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -75,7 +74,8 @@ public class GameActivity extends Activity {
 											int which) {
 										dialog.dismiss();
 										Intent intent = new Intent();
-										intent.setClass(GameActivity.this, GameActivity.class);
+										intent.setClass(GameActivity.this,
+												GameActivity.class);
 										startActivity(intent);
 										finish();
 									}
