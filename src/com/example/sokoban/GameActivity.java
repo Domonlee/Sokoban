@@ -15,6 +15,7 @@ import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.provider.Settings.System;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -31,6 +32,16 @@ public class GameActivity extends Activity {
 	private final ImageView[][] imageViews = new ImageView[8][11];
 	private SharedPreferences mPreferences;
 
+	//方向键
+	private TextView btn_step;
+	private TextView timeView;
+	private Button btn_up;
+	private Button btn_down;
+	private Button btn_right;
+	private Button btn_left;
+	private Button btn_restart;
+	
+	private String[] myString;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -44,6 +55,7 @@ public class GameActivity extends Activity {
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_game);
+
 		int k = 0;
 		for (int i = 0; i < 8; i++)
 			for (int j = 0; j < 11; j++) {
@@ -51,21 +63,15 @@ public class GameActivity extends Activity {
 				k++;
 			}
 		initMap(myString);
-		final TextView btn_step = (TextView) findViewById(R.id.step_text);
-		final TextView timeView = (TextView) findViewById(R.id.time_text);
-		final Button btn_up = (Button) findViewById(R.id.btn_up);
-		final Button btn_down = (Button) findViewById(R.id.btn_down);
-		final Button btn_right = (Button) findViewById(R.id.btn_right);
-		final Button btn_left = (Button) findViewById(R.id.btn_left);
-		final Button btn_restrat = (Button) findViewById(R.id.restartBtn);
+
+		findViewById();
 
 		final AudioUtil audioUtil = new AudioUtil();
 
-		btn_restrat.setOnClickListener(new View.OnClickListener() {
+		btn_restart.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				new AlertDialog.Builder(GameActivity.this)
 						.setTitle("提示")
 						.setMessage("你想重新开始本关还是开始新游戏?")
@@ -107,10 +113,9 @@ public class GameActivity extends Activity {
 		});
 
 		btn_up.setOnClickListener(new View.OnClickListener() {
-
+			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				if (matrix[people_x - 1][people_y] == 1) {
 					imageViews[people_x][people_y]
 							.setImageResource(R.drawable.im_null);
@@ -119,7 +124,7 @@ public class GameActivity extends Activity {
 					matrix[people_x][people_y] = 1;
 					people_x--;
 					matrix[people_x][people_y] = 4;
-					btn_step.setText(++step + "步");
+					btn_step.setText("步数 :" + ++step + "步");
 				} else if ((matrix[people_x - 1][people_y] == 2)
 						&& (matrix[people_x - 2][people_y] == 1)) {
 
@@ -135,16 +140,17 @@ public class GameActivity extends Activity {
 					matrix[people_x - 1][people_y] = 2;
 					if (checkPassOrNot(myString))
 						nextLevel(myString);
-					btn_step.setText(++step + "步");
+					btn_step.setText("步数 :" + ++step + "步");
 				}
-				audioUtil.PlaySoundPool(R.raw.btns);
+				AudioUtil.PlaySoundPool(R.raw.btns);
+				
 			}
 		});
-		btn_down.setOnClickListener(new View.OnClickListener() {
 
+		btn_down.setOnClickListener(new View.OnClickListener() {
+			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				if (matrix[people_x + 1][people_y] == 1) {
 					imageViews[people_x][people_y]
 							.setImageResource(R.drawable.im_null);
@@ -153,7 +159,7 @@ public class GameActivity extends Activity {
 					matrix[people_x][people_y] = 1;
 					people_x++;
 					matrix[people_x][people_y] = 4;
-					btn_step.setText(++step + "步");
+					btn_step.setText("步数 :" + ++step + "步");
 				} else if ((matrix[people_x + 1][people_y] == 2)
 						&& (matrix[people_x + 2][people_y] == 1)) {
 
@@ -169,51 +175,17 @@ public class GameActivity extends Activity {
 					matrix[people_x + 1][people_y] = 2;
 					if (checkPassOrNot(myString))
 						nextLevel(myString);
-					btn_step.setText(++step + "步");
+					btn_step.setText("步数 :" + ++step + "步");
 				}
 
+				AudioUtil.PlaySoundPool(R.raw.btns);
 			}
 		});
-		btn_right.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				if (matrix[people_x][people_y + 1] == 1) {
-					imageViews[people_x][people_y]
-							.setImageResource(R.drawable.im_null);
-					imageViews[people_x][people_y + 1]
-							.setImageResource(R.drawable.r);
-					matrix[people_x][people_y] = 1;
-					people_y++;
-					matrix[people_x][people_y] = 4;
-					btn_step.setText(++step + "步");
-				} else if ((matrix[people_x][people_y + 1] == 2)
-						&& (matrix[people_x][people_y + 2] == 1)) {
-
-					imageViews[people_x][people_y]
-							.setImageResource(R.drawable.im_null);
-					imageViews[people_x][people_y + 1]
-							.setImageResource(R.drawable.r);
-					imageViews[people_x][people_y + 2]
-							.setImageResource(R.drawable.xz);
-					matrix[people_x][people_y] = 1;
-					people_y++;
-					matrix[people_x][people_y] = 4;
-					matrix[people_x][people_y + 1] = 2;
-					if (checkPassOrNot(myString))
-						nextLevel(myString);
-					btn_step.setText(++step + "步");
-				}
-
-			}
-		});
+	
 		btn_left.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-
 				if (matrix[people_x][people_y - 1] == 1) {
 					imageViews[people_x][people_y]
 							.setImageResource(R.drawable.im_null);
@@ -222,7 +194,7 @@ public class GameActivity extends Activity {
 					matrix[people_x][people_y] = 1;
 					people_y--;
 					matrix[people_x][people_y] = 4;
-					btn_step.setText(++step + "步");
+					btn_step.setText("步数 :" + ++step + "步");
 				} else if ((matrix[people_x][people_y - 1] == 2)
 						&& (matrix[people_x][people_y - 2] == 1)) {
 
@@ -238,17 +210,67 @@ public class GameActivity extends Activity {
 					matrix[people_x][people_y - 1] = 2;
 					if (checkPassOrNot(myString))
 						nextLevel(myString);
-					btn_step.setText(++step + "步");
+					btn_step.setText("步数 :" + ++step + "步");
 				}
+				AudioUtil.PlaySoundPool(R.raw.btns);
+				
 			}
 		});
 
+		btn_right.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				if (matrix[people_x][people_y + 1] == 1) {
+					imageViews[people_x][people_y]
+							.setImageResource(R.drawable.im_null);
+					imageViews[people_x][people_y + 1]
+							.setImageResource(R.drawable.r);
+					matrix[people_x][people_y] = 1;
+					people_y++;
+					matrix[people_x][people_y] = 4;
+					btn_step.setText("步数 :" + ++step + "步");
+				} else if ((matrix[people_x][people_y + 1] == 2)
+						&& (matrix[people_x][people_y + 2] == 1)) {
+
+					imageViews[people_x][people_y]
+							.setImageResource(R.drawable.im_null);
+					imageViews[people_x][people_y + 1]
+							.setImageResource(R.drawable.r);
+					imageViews[people_x][people_y + 2]
+							.setImageResource(R.drawable.xz);
+					matrix[people_x][people_y] = 1;
+					people_y++;
+					matrix[people_x][people_y] = 4;
+					matrix[people_x][people_y + 1] = 2;
+					if (checkPassOrNot(myString))
+						nextLevel(myString);
+					btn_step.setText("步数 :" + ++step + "步");
+				}
+				AudioUtil.PlaySoundPool(R.raw.btns);
+			}
+		});
+		
 		MyHandler handler = new MyHandler(timeView);
 		MyThread thread = new MyThread(handler);
 		new Thread(thread).start();
 
 	}
 
+	// 获取控件
+	private void findViewById() {
+		btn_step = (TextView) findViewById(R.id.step_text);
+		timeView = (TextView) findViewById(R.id.time_text);
+		btn_up = (Button) findViewById(R.id.btn_up);
+		btn_down = (Button) findViewById(R.id.btn_down);
+		btn_right = (Button) findViewById(R.id.btn_right);
+		btn_left = (Button) findViewById(R.id.btn_left);
+		btn_restart = (Button) findViewById(R.id.btn_restart);
+	}
+	
+	/*
+	 * 利用线程更新计时器
+	 */
 	public class MyHandler extends Handler {
 		private TextView textView;
 
@@ -260,9 +282,8 @@ public class GameActivity extends Activity {
 		public void handleMessage(Message msg) {
 			super.handleMessage(msg);
 			Bundle bundle = msg.getData();
-			textView.setText(bundle.getString("time") + "S");
+			textView.setText("时间 :" + bundle.getString("time") + "秒");
 		}
-
 	}
 
 	public class MyThread implements Runnable {
@@ -275,13 +296,11 @@ public class GameActivity extends Activity {
 
 		@Override
 		public void run() {
-			// TODO 自动生成的方法存根
 			while (true) {
 				try {
 					Thread.sleep(1000);
 					counter++;
 				} catch (InterruptedException e) {
-					// TODO: handle exception
 					e.printStackTrace();
 				}
 				Message msg = new Message();

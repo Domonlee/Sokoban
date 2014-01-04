@@ -146,6 +146,7 @@ public final class R {
         public static final int btn_down=0x7f0a005c;
         public static final int btn_left=0x7f0a005e;
         public static final int btn_next=0x7f0a0063;
+        public static final int btn_restart=0x7f0a005a;
         public static final int btn_right=0x7f0a005d;
         public static final int btn_up=0x7f0a005b;
         public static final int op_sound_btn=0x7f0a006d;
@@ -153,7 +154,6 @@ public final class R {
         public static final int op_vib_btn=0x7f0a006f;
         public static final int op_vib_text=0x7f0a006e;
         public static final int pBar=0x7f0a0064;
-        public static final int restartBtn=0x7f0a005a;
         public static final int step_1=0x7f0a005f;
         public static final int step_2=0x7f0a0060;
         public static final int step_3=0x7f0a0061;

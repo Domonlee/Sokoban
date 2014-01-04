@@ -1,6 +1,7 @@
 package com.example.sokoban;
 
 import com.example.sokoban.R;
+import com.example.sokoban.Util.AudioUtil;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -19,13 +20,9 @@ import android.widget.Toast;
 
 public class OptionActivity extends Activity {
 
+	private Switch Bg_soundSwitch;
 	private Switch soundSwitch;
-	private Switch vibsSwitch;
 	private AudioManager mAudioManager;
-	private boolean sound_flag = true;
-	private boolean vibrator_flag = false;
-	private int volume = 0;
-	private int mode = 0;
 
 	@SuppressLint("NewApi")
 	@Override
@@ -37,55 +34,40 @@ public class OptionActivity extends Activity {
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_option);
 
-		soundSwitch = (Switch) findViewById(R.id.op_sound_btn);
-		vibsSwitch = (Switch) findViewById(R.id.op_vib_btn);
+		Bg_soundSwitch = (Switch) findViewById(R.id.op_sound_btn);
+		soundSwitch = (Switch) findViewById(R.id.op_vib_btn);
 
-		Vibrator mVibrator = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
-		mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+		Bg_soundSwitch.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView,
+					boolean isChecked) {
+				if (isChecked) {
+					Toast.makeText(getApplicationContext(), "关闭背景音乐",
+							Toast.LENGTH_LONG).show();
+					AudioUtil.StopMusic();
+				} else {
+					Toast.makeText(getApplicationContext(), "打开背景音乐",
+							Toast.LENGTH_LONG).show();
+					AudioUtil.init(getApplicationContext());
+					AudioUtil.PlayMusic();
+				}
+			}
+		});
 
 		soundSwitch.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				// TODO Auto-generated method stub
-
 				if (isChecked) {
-					// 选中时 do some thing
-					Toast.makeText(getApplicationContext(), "设置静音成功",
+					Toast.makeText(getApplicationContext(), "打开音效",
 							Toast.LENGTH_LONG).show();
-					mAudioManager.setStreamMute(BIND_ADJUST_WITH_ACTIVITY,
-							isChecked);
-					sound_flag = false;
+					AudioUtil.setSoundRunning(true);
 				} else {
-					// 非选中时 do some thing
-					mAudioManager.setStreamMute(BIND_ADJUST_WITH_ACTIVITY,
-							isChecked);
-					Toast.makeText(getApplicationContext(), "打开声音",
+					Toast.makeText(getApplicationContext(), "关闭音效",
 							Toast.LENGTH_LONG).show();
-					sound_flag = true;
-
-				}
-			}
-		});
-
-		vibsSwitch.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-
-			@Override
-			public void onCheckedChanged(CompoundButton buttonView,
-					boolean isChecked) {
-				// TODO Auto-generated method stub
-				if (isChecked) {
-					// 选中时 do some thing
-					Toast.makeText(getApplicationContext(), "打开震动",
-							Toast.LENGTH_LONG).show();
-					vibrator_flag = true;
-
-				} else {
-					// 非选中时 do some thing
-					Toast.makeText(getApplicationContext(), "关闭震动",
-							Toast.LENGTH_LONG).show();
-					vibrator_flag = false;
+					AudioUtil.setSoundRunning(false);
 				}
 			}
 		});
