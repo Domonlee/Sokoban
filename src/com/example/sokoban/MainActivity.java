@@ -51,6 +51,7 @@ public class MainActivity extends Activity {
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_main);
 		
+		//≥ı ºªØAudioUitl
 		AudioUtil.init(getApplicationContext());
 		AudioUtil.PlayMusic();
 

@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="120dp"
-            android:text="静音"
+            android:text="@string/bg_sound"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
 
@@ -36,7 +36,7 @@
             android:layout_below="@id/op_sound_text"
             android:layout_marginLeft="120dp"
             android:layout_marginTop="10dp"
-            android:text="震动"
+            android:text="@string/btn_sound"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
 

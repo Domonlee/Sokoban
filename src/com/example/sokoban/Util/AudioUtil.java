@@ -17,6 +17,7 @@ public class AudioUtil {
 	 * 第三步：调用音效文件的方法AudioUtil.PlaySoundPool(R.raw.back) 音乐开关
 	 * AudioUtil.soundControl()
 	 */
+	
 	// 声明媒体播放类对象
 	private static MediaPlayer mMediaPlayer;
 	// 声明声音池类对象
@@ -127,6 +128,5 @@ public class AudioUtil {
 			AudioUtil.setSoundRunning(true);
 			AudioUtil.PlayMusic();
 		}
-
 	}
 }

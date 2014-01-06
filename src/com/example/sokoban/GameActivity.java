@@ -13,9 +13,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
-import android.provider.Settings.System;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -25,14 +23,14 @@ import android.widget.Toast;
 
 public class GameActivity extends Activity {
 	private int counter = 0;
-	private int[][] matrix = new int[8][11];
+	private int matrix[][] = new int[8][11];
 	private int people_x, people_y;
 	private int level, money;
 	private int step = 0;
 	private final ImageView[][] imageViews = new ImageView[8][11];
 	private SharedPreferences mPreferences;
 
-	//方向键
+	// 方向键
 	private TextView btn_step;
 	private TextView timeView;
 	private Button btn_up;
@@ -40,8 +38,9 @@ public class GameActivity extends Activity {
 	private Button btn_right;
 	private Button btn_left;
 	private Button btn_restart;
-	
+
 	private String[] myString;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -50,7 +49,7 @@ public class GameActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		// res用来加载关卡数据 箱子坐标 围墙坐标 人物坐标 目的坐标
 		Resources res = getResources();
-		final String[] myString = res.getStringArray(R.array.my_array);
+		myString = res.getStringArray(R.array.my_array);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -66,7 +65,7 @@ public class GameActivity extends Activity {
 
 		findViewById();
 
-		final AudioUtil audioUtil = new AudioUtil();
+		// final AudioUtil audioUtil = new AudioUtil();
 
 		btn_restart.setOnClickListener(new View.OnClickListener() {
 
@@ -113,7 +112,7 @@ public class GameActivity extends Activity {
 		});
 
 		btn_up.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				if (matrix[people_x - 1][people_y] == 1) {
@@ -143,12 +142,12 @@ public class GameActivity extends Activity {
 					btn_step.setText("步数 :" + ++step + "步");
 				}
 				AudioUtil.PlaySoundPool(R.raw.btns);
-				
+
 			}
 		});
 
 		btn_down.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				if (matrix[people_x + 1][people_y] == 1) {
@@ -181,7 +180,7 @@ public class GameActivity extends Activity {
 				AudioUtil.PlaySoundPool(R.raw.btns);
 			}
 		});
-	
+
 		btn_left.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -213,12 +212,12 @@ public class GameActivity extends Activity {
 					btn_step.setText("步数 :" + ++step + "步");
 				}
 				AudioUtil.PlaySoundPool(R.raw.btns);
-				
+
 			}
 		});
 
 		btn_right.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				if (matrix[people_x][people_y + 1] == 1) {
@@ -250,7 +249,7 @@ public class GameActivity extends Activity {
 				AudioUtil.PlaySoundPool(R.raw.btns);
 			}
 		});
-		
+
 		MyHandler handler = new MyHandler(timeView);
 		MyThread thread = new MyThread(handler);
 		new Thread(thread).start();
@@ -267,7 +266,7 @@ public class GameActivity extends Activity {
 		btn_left = (Button) findViewById(R.id.btn_left);
 		btn_restart = (Button) findViewById(R.id.btn_restart);
 	}
-	
+
 	/*
 	 * 利用线程更新计时器
 	 */
